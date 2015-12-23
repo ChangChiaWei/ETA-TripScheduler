@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.nyu.cs9033.eta.controllers.TripHistoryActivity" >
+
+    <LinearLayout
+        android:id="@+id/footerBtnOfHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff00ddff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footerBtnOfHistory">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPresent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff00ddff"
+                android:textSize="20sp"
+                android:text="@string/present_trip"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:padding="5dp" />
+
+            <ListView
+                android:id="@+id/listPresent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <TextView
+                android:id="@+id/textFuture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff00ddff"
+                android:textSize="20sp"
+                android:text="@string/future_trip"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FFFFFF" />
+
+            <ListView
+                android:id="@+id/listFuture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <TextView
+                android:id="@+id/textPast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff00ddff"
+                android:textSize="20sp"
+                android:text="@string/past_trip"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FFFFFF" />
+
+            <ListView
+                android:id="@+id/listPast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+<!-- From: file:/Users/chia-weichang/Desktop/android/ETA_CS9033Template/ETA_CS9033＿ChangChiaWei/app/src/main/res/layout/activity_trip_history.xml -->
