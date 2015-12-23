@@ -7,4 +7,6 @@ Friends schedule short trips all of the time. People go to lunch, dinner, a nigh
 ETA-TripScheduler, an app for you and your friends that predicts when you should leave your current location to arrive at the same time as everyone else.
 
 
+
+
 #####NOTE : This application has been designed and developed using Android's Model-View-Controller(MVC) framework 
